@@ -1,0 +1,664 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive,noimageindex">
+<style>*{box-sizing:border-box}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>Nineteen Looks for Dayal School</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Noto+Sans+Devanagari:wght@400;500;600;700&family=Noto+Serif+Devanagari:wght@400;600;700&family=Tiro+Devanagari+Hindi&display=swap">
+<style>
+:root{
+  --stage:#EFF0F2; --card:#FFFFFF; --ink:#151618; --mute:#616365;
+  --rule:#D9DBDD; --pick:#005634; --onPick:#FFFFFF; --pickTint:#E5F5EB;
+  --ui:Inter,"Helvetica Neue",Arial,sans-serif;
+  --serif:"Source Serif 4",Georgia,"Times New Roman",serif;
+  --dv-ui:"Noto Sans Devanagari","Nirmala UI",sans-serif;
+  --dv-serif:"Noto Serif Devanagari","Nirmala UI",serif;
+  --wordmark:"Tiro Devanagari Hindi","Source Serif 4",Georgia,serif;
+}
+/* measured: ink/stage 15.88:1 · ink/card 18.11:1 · mute/card 6.03:1 · pick/card 8.82:1 · onPick/pick 8.82:1 */
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --stage:#0F1112; --card:#1C1E20; --ink:#EFF0F2; --mute:#A2A5A8;
+    --rule:#333638; --pick:#67D89C; --onPick:#001C0E; --pickTint:#1C3125;
+  }
+}
+/* measured, dark: ink/stage 16.60:1 · ink/card 14.66:1 · mute/card 6.75:1 · pick/card 9.46:1 · onPick/pick 10.13:1 */
+:root[data-theme="dark"]{
+  --stage:#0F1112; --card:#1C1E20; --ink:#EFF0F2; --mute:#A2A5A8;
+  --rule:#333638; --pick:#67D89C; --onPick:#001C0E; --pickTint:#1C3125;
+}
+*{box-sizing:border-box}
+body{background:var(--stage); color:var(--ink); font-family:var(--ui); font-size:16px; line-height:1.6; -webkit-font-smoothing:antialiased}
+.wrap{max-width:1240px; margin:0 auto; padding:0 16px 132px}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--pick); outline-offset:2px}
+
+.masthead{padding:28px 0 0}
+.crest{display:flex; align-items:center; gap:10px}
+.crest .seal{width:34px; height:34px; flex:none; border-radius:50%; background:var(--ink); color:var(--stage); display:flex; align-items:center; justify-content:center; font-family:var(--wordmark); font-size:15px; line-height:1}
+.crest .nm{font-family:var(--wordmark); font-size:15px; line-height:1.25}
+.masthead h1{font-family:var(--serif); font-weight:700; font-size:clamp(28px,7.5vw,44px); line-height:1.1; margin:20px 0 0; text-wrap:balance; letter-spacing:-.015em}
+.masthead .intro{font-size:17px; line-height:1.6; margin:14px 0 0; max-width:34ch; color:var(--ink)}
+.steps{list-style:none; margin:22px 0 0; padding:0; display:grid; gap:10px; max-width:44ch}
+.steps li{display:grid; grid-template-columns:26px 1fr; gap:11px; align-items:baseline; font-size:15px; color:var(--mute)}
+.steps .sn{font-variant-numeric:tabular-nums; font-weight:800; font-size:13px; color:var(--pick)}
+.steps b{color:var(--ink); font-weight:700}
+.mrule{height:2px; background:var(--ink); margin:26px 0 0}
+
+.group{padding:34px 0 0}
+.group h2{font-family:var(--serif); font-weight:700; font-size:clamp(21px,5vw,27px); line-height:1.15; margin:0}
+.gnote{margin:7px 0 0; color:var(--mute); font-size:14.5px; max-width:52ch}
+.opts{display:grid; grid-template-columns:1fr; gap:16px; margin:20px 0 0}
+@media (min-width:700px){.opts{grid-template-columns:repeat(auto-fill,minmax(310px,1fr))}}
+
+.opt{background:var(--card); border:1px solid var(--rule); border-radius:4px; padding:16px 14px; display:flex; flex-direction:column; gap:14px; min-width:0}
+.opt[data-liked="1"]{border-color:var(--pick); box-shadow:inset 0 0 0 2px var(--pick)}
+.ohead{display:grid; grid-template-columns:auto 1fr; gap:13px; align-items:start}
+.obadge{font-variant-numeric:tabular-nums; font-weight:800; font-size:20px; line-height:1; width:44px; height:44px; flex:none; display:flex; align-items:center; justify-content:center; background:var(--stage); color:var(--ink); border-radius:3px}
+.opt[data-liked="1"] .obadge{background:var(--pick); color:var(--onPick)}
+.ometa{min-width:0}
+.ometa h3{font-family:var(--serif); font-weight:700; font-size:19px; line-height:1.2; margin:0; text-wrap:balance}
+.ometa p{margin:6px 0 0; font-size:14.5px; line-height:1.55; color:var(--mute)}
+.oshot{width:100%; max-width:430px; margin:0 auto}
+.olike{width:100%; min-height:52px; display:flex; align-items:center; justify-content:center; gap:9px; background:transparent; color:var(--ink); border:2px solid var(--ink); border-radius:3px; font-family:var(--ui); font-size:16px; font-weight:700; padding:13px 16px; cursor:pointer; line-height:1.3}
+.olike .tick{display:inline-flex; align-items:center; justify-content:center; width:22px; height:22px; flex:none; border:2px solid currentColor; border-radius:3px; font-size:14px; font-weight:900; color:transparent}
+.opt[data-liked="1"] .olike{background:var(--pick); border-color:var(--pick); color:var(--onPick)}
+.opt[data-liked="1"] .olike .tick{color:var(--onPick); border-color:var(--onPick)}
+
+.bar{position:fixed; left:0; right:0; bottom:0; z-index:9; background:var(--card); border-top:2px solid var(--ink); padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px)); display:flex; align-items:center; gap:12px; flex-wrap:wrap}
+.bar .bl{font-size:11px; letter-spacing:.14em; text-transform:uppercase; font-weight:700; color:var(--mute); margin:0}
+.bar .bv{font-variant-numeric:tabular-nums; font-weight:800; font-size:19px; line-height:1.25; margin:2px 0 0; color:var(--ink); word-break:break-word}
+.bar .bgo{flex:none; margin-left:auto; min-height:44px; display:inline-flex; align-items:center; background:var(--ink); color:var(--card); text-decoration:none; font-weight:700; font-size:15px; padding:12px 18px; border-radius:3px}
+
+.finish{margin:44px 0 0; background:var(--card); border:1px solid var(--rule); border-top:4px solid var(--pick); border-radius:4px; padding:24px 18px}
+.finish h2{font-family:var(--serif); font-weight:700; font-size:clamp(22px,5.5vw,30px); line-height:1.15; margin:0}
+.picked{font-variant-numeric:tabular-nums; font-weight:800; font-size:clamp(30px,10vw,54px); line-height:1.1; letter-spacing:.02em; margin:16px 0 0; color:var(--pick); word-break:break-word}
+.picked.none{font-size:19px; font-weight:600; color:var(--mute); letter-spacing:0}
+.pnames{margin:10px 0 0; padding:0; list-style:none; display:grid; gap:5px}
+.pnames li{font-size:15px; color:var(--mute)}
+.pnames li b{color:var(--ink); font-weight:700}
+.finish .say{margin:20px 0 0; font-size:16px; line-height:1.6; max-width:42ch}
+.finish .say b{font-weight:700}
+.finish .local{margin:16px 0 0; font-size:13.5px; line-height:1.55; color:var(--mute); max-width:46ch; border-top:1px solid var(--rule); padding-top:14px}
+.clearbtn{margin:16px 0 0; min-height:44px; background:transparent; color:var(--mute); border:1px solid var(--rule); border-radius:3px; font-family:var(--ui); font-size:14px; font-weight:600; padding:12px 16px; cursor:pointer}
+
+.foot{margin:34px 0 0; font-size:13px; line-height:1.6; color:var(--mute); border-top:1px solid var(--rule); padding-top:16px}
+@media (prefers-reduced-motion:reduce){*{animation:none!important; transition:none!important}}
+
+.p{
+  width:100%; overflow:hidden; background:var(--bg); color:var(--fg);
+  border:var(--frame,1px solid rgba(0,0,0,.14));
+  box-shadow:0 16px 34px -20px rgba(16,10,20,.55);
+}
+.p *{min-width:0}
+.p .bar{display:flex; align-items:center; justify-content:space-between; gap:9px; padding:10px 12px; background:var(--barBg); border-bottom:var(--barRule,1px solid rgba(0,0,0,.12))}
+.p .bd{display:flex; align-items:center; gap:7px; min-width:0}
+.p .seal{width:22px; height:22px; flex:none; border-radius:var(--sealR,50%); background:var(--sealBg); color:var(--sealFg); display:flex; align-items:center; justify-content:center; font-family:var(--wordmark); font-size:10px; line-height:1}
+.p .bn{font-family:var(--wordmark); font-size:11.5px; line-height:1.25; color:var(--barFg)}
+.p .lg{font-family:var(--ui); font-size:9.5px; font-weight:700; padding:4px 7px; color:var(--lgFg,var(--barFg)); border:1px solid var(--lgEdge,rgba(128,128,128,.5)); flex:none}
+.p .hero{padding:16px 13px 18px; background:var(--heroBg,transparent); color:var(--heroFg,var(--fg))}
+.p .eb{font-family:var(--ui); font-size:9px; letter-spacing:.15em; text-transform:uppercase; font-weight:700; color:var(--ebFg,var(--a1)); margin:0 0 8px}
+.p h4{margin:0; font-family:var(--serif); font-weight:700; font-size:20px; line-height:1.16; color:var(--headFg,var(--heroFg,var(--fg))); text-wrap:balance}
+.p h4 .hi{font-family:var(--dv-serif); font-size:18px; line-height:1.45; font-weight:700}
+.p.sans h4{font-family:var(--ui); font-weight:800; letter-spacing:-.02em; font-size:21px; line-height:1.1}
+.p.sans h4 .hi{font-family:var(--dv-ui); letter-spacing:0; font-size:18px; line-height:1.45}
+.p .lede{font-family:var(--ui); font-size:12px; line-height:1.6; color:var(--ledeFg,var(--mute)); margin:9px 0 0}
+.p .lede .hi{font-family:var(--dv-ui); font-size:12.5px; line-height:1.9}
+.p .ct{display:flex; gap:7px; margin:13px 0 0; flex-wrap:wrap}
+.p .c1,.p .c2{font-family:var(--ui); font-size:12px; font-weight:700; padding:11px 13px; text-align:center; flex:1 1 auto; line-height:1.35}
+.p .c1 .hi,.p .c2 .hi{font-family:var(--dv-ui); font-size:12.5px; line-height:1.9; font-weight:600}
+.p .c1{background:var(--c1Bg); color:var(--c1Fg); border:var(--c1Edge,0)}
+.p .c2{background:var(--c2Bg); color:var(--c2Fg); border:var(--c2Edge,0)}
+.p .rule{height:var(--ruleH,2px); background:var(--ruleBg,var(--a2))}
+.p .bandA,.p .bandB{padding:16px 13px}
+.p .bandA{background:var(--bandABg,transparent); color:var(--bandAFg,var(--fg)); border-top:var(--bandARule,0)}
+.p .bandB{background:var(--bandBBg,transparent); color:var(--bandBFg,var(--fg)); border-top:var(--bandBRule,0)}
+.p .lab{font-family:var(--ui); font-size:9px; letter-spacing:.16em; text-transform:uppercase; font-weight:700; color:var(--labFg,var(--a1)); margin:0 0 8px}
+.p .lab .hi{font-family:var(--dv-ui); font-size:10.5px; line-height:1.9; letter-spacing:0; text-transform:none}
+.p h5{margin:0; font-family:var(--serif); font-weight:700; font-size:15px; line-height:1.24; color:inherit}
+.p h5 .hi{font-family:var(--dv-serif); font-size:14px; line-height:1.45}
+.p.sans h5{font-family:var(--ui); font-weight:800; letter-spacing:-.01em}
+.p.sans h5 .hi{font-family:var(--dv-ui); letter-spacing:0}
+.p .chips{display:flex; flex-wrap:wrap; gap:5px; margin:11px 0 0}
+.p .chips span{font-family:var(--ui); font-size:10.5px; font-weight:600; padding:5px 9px; background:var(--chipBg,transparent); color:var(--chipFg,var(--a1)); border:var(--chipEdge,1px solid currentColor); border-radius:var(--chipR,0)}
+.p .chips span .hi{font-family:var(--dv-ui); font-size:11px; line-height:1.9; font-weight:500}
+.p .shot{display:flex; align-items:center; justify-content:center; text-align:center; padding:9px; height:66px; font-family:var(--ui); font-size:8.5px; letter-spacing:.1em; text-transform:uppercase; background:var(--shotBg,rgba(128,128,128,.14)); color:var(--shotFg,var(--mute)); border-top:var(--shotRule,0); border-bottom:var(--shotRule,0); line-height:1.6}
+.p .ft{padding:12px 13px; background:var(--ftBg); color:var(--ftFg)}
+.p .ft p{margin:0; font-family:var(--ui); font-size:10px; line-height:1.5; color:inherit}
+.p .ft p .hi{font-family:var(--dv-ui); font-size:11px; line-height:1.9}
+.p .nums{display:flex; gap:9px; margin:7px 0 0; font-family:var(--ui); font-variant-numeric:tabular-nums; font-size:11.5px; font-weight:700; color:var(--numFg,var(--a2))}
+/* structure variants */
+.p.centre .hero,.p.centre .bandA{text-align:center}
+.p.centre .ct{justify-content:center}
+.p.centre .chips{justify-content:center}
+.p .clock{font-family:var(--ui); font-variant-numeric:tabular-nums; font-size:36px; font-weight:800; line-height:.95; letter-spacing:-.03em; color:var(--clockFg,var(--a2)); margin:0 0 4px}
+.p .clockcap{font-family:var(--ui); font-size:9px; letter-spacing:.16em; text-transform:uppercase; margin:0 0 10px; color:var(--ledeFg,var(--mute))}
+.p .clockcap .hi{font-family:var(--dv-ui); font-size:10.5px; line-height:1.9; letter-spacing:0; text-transform:none}
+.p .rows{margin:10px 0 0}
+.p .rows div{display:grid; grid-template-columns:40px 1fr; gap:9px; padding:6px 0; border-top:1px solid var(--rowEdge,rgba(128,128,128,.28)); align-items:baseline}
+.p .rows .t{font-family:var(--ui); font-variant-numeric:tabular-nums; font-size:10px; font-weight:800; color:var(--a1)}
+.p .rows .e{font-family:var(--ui); font-size:11.5px; line-height:1.45}
+.p .rows .e .hi{font-family:var(--dv-ui); font-size:11.5px; line-height:1.9}
+.p .hl{background:linear-gradient(transparent 52%,var(--hlC,#FFEA6B) 52%); padding:0 2px}
+
+
+/* ---------- hooks the minimal set needs (R S T U) ---------- */
+.p .seal{border:var(--sealEdge,0)}
+.p .ft{border-top:var(--ftRule,0)}
+.p .rows .e strong{font-weight:800}
+.p.rail .hero,.p.rail .bandA,.p.rail .bandB,.p.rail .ft{border-left:3px solid var(--a1)}
+.p.airy .hero{padding:24px 16px 26px}
+.p.airy .bandA,.p.airy .bandB{padding:22px 16px}
+.p.airy h4{font-size:21px; line-height:1.22}
+.p.airy .lede{margin-top:12px}
+[data-lang="en"] .hi{display:none}
+[data-lang="hi"] .en{display:none}
+.en,.hi{display:block}
+.chips span .en,.chips span .hi,.c1 .en,.c1 .hi,.c2 .en,.c2 .hi,.t .en,.t .hi{display:block}
+</style>
+
+</head>
+<body>
+<div class="wrap" data-lang="en">
+
+<header class="masthead">
+  <div class="crest"><span class="seal">D</span><span class="nm">Dayal School of Competition</span></div>
+  <h1>Nineteen designs for the new website</h1>
+  <p class="intro">The same page, drawn nineteen different ways. This is only the look — the words and photographs come later.</p>
+  <ol class="steps">
+    <li><span class="sn">1</span><span>Scroll through all nineteen. Each one has a letter.</span></li>
+    <li><span class="sn">2</span><span>Tap <b>Like this</b> under any you like. Choose as many as you want.</span></li>
+    <li><span class="sn">3</span><span>At the bottom you will see your letters. <b>Send those letters back on WhatsApp.</b></span></li>
+  </ol>
+  <div class="mrule"></div>
+</header>
+<section class="group">
+  <h2>Warm and traditional</h2>
+  <p class="gnote">Terracotta, amber and dark brown. Closest to how the school already presents itself in print.</p>
+  <div class="opts">
+    <article class="opt" data-id="A" id="opt-A">
+      <div class="ohead"><span class="obadge">A</span><div class="ometa"><h3>The Register</h3><p>Plain and orderly, like a printed prospectus. Nothing decorative, and it still looks finished with no photographs on it.</p></div></div>
+      <div class="oshot">
+        <div class="p" style="--bg:#FCF5F3;--fg:#150F0D;--mute:#655753;--a1:#933B24;--a2:#E7A200;--barBg:#FFFDFC;--barFg:#150F0D;--sealBg:#160702;--sealFg:#F9B73F;--c1Bg:#B75036;--c1Fg:#FFFDFC;--c2Bg:transparent;--c2Fg:#933B24;--c2Edge:1px solid #B75036;--ftBg:#F5EAE7;--ftFg:#655753;--numFg:#933B24;--bandARule:2px solid #150F0D;--chipBg:#F5EAE7;--chipFg:#933B24;--chipEdge:0">
+      <div class="bar"><div class="bd"><div class="seal">D</div><div class="bn">Dayal School of Competition</div></div><div class="lg">हिं</div></div>
+      <div class="hero">
+        <p class="eb"><span class="en">Satnali, Haryana · Estd. 1999</span><span class="hi">सतनाली, हरियाणा · Estd. 1999</span></p>
+        <h4><span class="en">Residential schooling and coaching for classes 3 to 10</span><span class="hi">कक्षा 3 से 10 तक आवासीय स्कूली शिक्षा और कोचिंग</span></h4>
+        <p class="lede"><span class="en">With teachers living in residence alongside the students.</span><span class="hi">जहाँ शिक्षक विद्यार्थियों के साथ ही परिसर में रहते हैं।</span></p>
+        <div class="ct"><div class="c1"><span class="en">Call</span><span class="hi">कॉल करें</span></div><div class="c2"><span class="en">WhatsApp</span><span class="hi">व्हाट्सऐप</span></div></div>
+      </div>
+      <div class="bandA">
+        <p class="lab"><span class="en">A gateway to</span><span class="hi">प्रवेशद्वार</span></p>
+        <h5><span class="en">RIMC, RMS, Sainik Schools, MNSS Rai, APS Dagshai, The Gurukul and JNV</span><span class="hi">आरआईएमसी, आरएमएस, सैनिक स्कूल, एमएनएसएस राय, एपीएस, द गुरुकुल और जेएनवी</span></h5>
+        <div class="chips"><span><span class="en">Stage I · 4–8</span><span class="hi">चरण I · 4–8</span></span><span><span class="en">Stage II · 9–10</span><span class="hi">चरण II · 9–10</span></span></div>
+      </div>
+      <div class="shot"><span class="en">Campus photograph</span><span class="hi">परिसर का फ़ोटो</span></div>
+      <div class="ft"><p><span class="en">Admission is by entrance test. Fees are shared on enquiry.</span><span class="hi">दाख़िला प्रवेश परीक्षा से होता है। फ़ीस पूछताछ पर बताई जाती है।</span></p><div class="nums"><span>94682-32364</span><span>72063-22364</span></div></div>
+    </div>
+      </div>
+      <button type="button" class="olike" aria-pressed="false"><span class="tick" aria-hidden="true">✓</span><span class="lt">Like this</span></button>
+    </article>
+    <article class="opt" data-id="B" id="opt-B">
+      <div class="ohead"><span class="obadge">B</span><div class="ometa"><h3>The Courtyard</h3><p>A photograph across the top with the school name over it, then clean warm paper below.</p></div></div>
+      <div class="oshot">
+        <div class="p" style="--bg:#FCF5F3;--fg:#150F0D;--mute:#655753;--a1:#933B24;--a2:#E7A200;--barBg:#FFFDFC;--barFg:#150F0D;--sealBg:#160702;--sealFg:#F9B73F;--heroBg:#160702;--heroFg:#FAF6F3;--ebFg:#F9B73F;--ledeFg:#BEADA5;--c1Bg:#B75036;--c1Fg:#FFFDFC;--c2Bg:transparent;--c2Fg:#F7BAA9;--c2Edge:1px solid #F7BAA9;--ftBg:#F5EAE7;--ftFg:#655753;--numFg:#933B24;--chipBg:#F5EAE7;--chipFg:#933B24;--chipEdge:0;--shotBg:#261106;--shotFg:#BEADA5">
+      <div class="bar"><div class="bd"><div class="seal">D</div><div class="bn">Dayal School of Competition</div></div><div class="lg">हिं</div></div>
+      <div class="shot"><span class="en">Hero photograph · scrim 78% · 9.61:1</span><span class="hi">हीरो फ़ोटो · स्क्रिम 78%</span></div>
+      <div class="hero">
+        <p class="eb"><span class="en">Satnali, Haryana</span><span class="hi">सतनाली, हरियाणा</span></p>
+        <h4><span class="en">Residential schooling and coaching for classes 3 to 10</span><span class="hi">कक्षा 3 से 10 तक आवासीय स्कूली शिक्षा और कोचिंग</span></h4>
+        <p class="lede"><span class="en">With teachers living in residence alongside the students.</span><span class="hi">जहाँ शिक्षक विद्यार्थियों के साथ ही परिसर में रहते हैं।</span></p>
+        <div class="ct"><div class="c1"><span class="en">Call</span><span class="hi">कॉल करें</span></div><div class="c2"><span class="en">WhatsApp</span><span class="hi">व्हाट्सऐप</span></div></div>
+      </div>
+      <div class="bandA">
+        <p class="lab"><span class="en">One day at Dayal School</span><span class="hi">Dayal School में एक दिन</span></p>
+        <h5><span class="en">From reveille to lights out</span><span class="hi">जागरण से बत्ती बंद तक</span></h5>
+        <div class="rows">
+          <div><span class="t">04:00</span><span class="e"><span class="en">Reveille, in summer</span><span class="hi">गर्मियों में जागरण</span></span></div>
+          <div><span class="t">22:30</span><span class="e"><span class="en">Lights out</span><span class="hi">बत्ती बंद</span></span></div>
+        </div>
+      </div>
+      <div class="ft"><p><span class="en">Admission is by entrance test. Fees are shared on enquiry.</span><span class="hi">दाख़िला प्रवेश परीक्षा से होता है। फ़ीस पूछताछ पर बताई जाती है।</span></p><div class="nums"><span>94682-32364</span><span>72063-22364</span></div></div>
+    </div>
+      </div>
+      <button type="button" class="olike" aria-pressed="false"><span class="tick" aria-hidden="true">✓</span><span class="lt">Like this</span></button>
+    </article>
+    <article class="opt" data-id="C" id="opt-C">
+      <div class="ohead"><span class="obadge">C</span><div class="ometa"><h3>The Parade Ground</h3><p>Centred and formal, crest first. The closest of all of them to the school’s printed posters.</p></div></div>
+      <div class="oshot">
+        <div class="p centre" style="--bg:#FCF5F3;--fg:#150F0D;--mute:#655753;--a1:#933B24;--a2:#E7A200;--barBg:#160702;--barFg:#FAF6F3;--barRule:2px solid #E7A200;--sealBg:#E7A200;--sealFg:#160702;--lgFg:#FAF6F3;--lgEdge:1px solid #3B2114;--c1Bg:#B75036;--c1Fg:#FFFDFC;--c2Bg:transparent;--c2Fg:#933B24;--c2Edge:1px solid #B75036;--ftBg:#F5EAE7;--ftFg:#655753;--numFg:#933B24;--bandABg:#E7A200;--bandAFg:#150F0D;--labFg:#150F0D;--chipBg:#FFFDFC;--chipFg:#150F0D;--chipEdge:0">
+      <div class="bar"><div class="bd"><div class="seal">D</div><div class="bn">Dayal School of Competition</div></div><div class="lg">हिं</div></div>
+      <div class="hero">
+        <p class="eb"><span class="en">Satnali · Haryana · Estd. 1999</span><span class="hi">सतनाली · हरियाणा · Estd. 1999</span></p>
+        <h4><span class="en">Residential schooling and coaching for classes 3 to 10</span><span class="hi">कक्षा 3 से 10 तक आवासीय स्कूली शिक्षा और कोचिंग</span></h4>
+        <p class="lede"><span class="en">With teachers living in residence alongside the students.</span><span class="hi">जहाँ शिक्षक विद्यार्थियों के साथ ही परिसर में रहते हैं।</span></p>
+        <div class="ct"><div class="c1"><span class="en">Call</span><span class="hi">कॉल करें</span></div><div class="c2"><span class="en">WhatsApp</span><span class="hi">व्हाट्सऐप</span></div></div>
+      </div>
+      <div class="bandA">
+        <p class="lab"><span class="en">More than coaching</span><span class="hi">कोचिंग से कहीं अधिक</span></p>
+        <h5><span class="en">More than marks. More than exams.</span><span class="hi">अंकों से बढ़कर। परीक्षाओं से बढ़कर।</span></h5>
+        <div class="chips"><span><span class="en">Life</span><span class="hi">जीवन</span></span><span><span class="en">Care</span><span class="hi">देखभाल</span></span><span><span class="en">Character</span><span class="hi">चरित्र</span></span><span><span class="en">Excellence</span><span class="hi">उत्कृष्टता</span></span></div>
+      </div>
+      <div class="shot"><span class="en">Campus photograph</span><span class="hi">परिसर का फ़ोटो</span></div>
+      <div class="ft"><p><span class="en">Admission is by entrance test. Fees are shared on enquiry.</span><span class="hi">दाख़िला प्रवेश परीक्षा से होता है। फ़ीस पूछताछ पर बताई जाती है।</span></p><div class="nums"><span>94682-32364</span><span>72063-22364</span></div></div>
+    </div>
+      </div>
+      <button type="button" class="olike" aria-pressed="false"><span class="tick" aria-hidden="true">✓</span><span class="lt">Like this</span></button>
+    </article>
+    <article class="opt" data-id="D" id="opt-D">
+      <div class="ohead"><span class="obadge">D</span><div class="ometa"><h3>Hindi First</h3><p>Built around the Hindi line जहाँ आपको सफलता मिलती है, with the seven schools listed straight down the page.</p></div></div>
+      <div class="oshot">
+        <div class="p" style="--bg:#FCF5F3;--fg:#150F0D;--mute:#655753;--a1:#933B24;--a2:#E7A200;--barBg:#FFFDFC;--barFg:#150F0D;--sealBg:#160702;--sealFg:#F9B73F;--c1Bg:#B75036;--c1Fg:#FFFDFC;--c2Bg:transparent;--c2Fg:#933B24;--c2Edge:1px solid #B75036;--ftBg:#160702;--ftFg:#BEADA5;--numFg:#F9B73F;--bandARule:2px solid #150F0D;--chipBg:#F5EAE7;--chipFg:#933B24;--chipEdge:0">
+      <div class="bar"><div class="bd"><div class="seal">D</div><div class="bn">Dayal School of Competition</div></div><div class="lg">हिं</div></div>
+      <div class="hero">
+        <p class="eb" style="color:#933B24"><span class="en">जहाँ आपको सफलता मिलती है</span><span class="hi">जहाँ आपको सफलता मिलती है</span></p>
+        <h4><span class="en">Residential schooling and coaching for classes 3 to 10</span><span class="hi">कक्षा 3 से 10 तक आवासीय स्कूली शिक्षा और कोचिंग</span></h4>
+        <p class="lede"><span class="en">Teachers live in residence alongside the students. Satnali, Mahendergarh district.</span><span class="hi">शिक्षक विद्यार्थियों के साथ ही परिसर में रहते हैं। सतनाली, महेंद्रगढ़ ज़िला।</span></p>
+        <div class="ct"><div class="c1"><span class="en">Call</span><span class="hi">कॉल करें</span></div><div class="c2"><span class="en">WhatsApp</span><span class="hi">व्हाट्सऐप</span></div></div>
+      </div>
+      <div class="bandA">
+        <p class="lab"><span class="en">A gateway to</span><span class="hi">प्रवेशद्वार</span></p>
+        <div class="rows">
+          <div><span class="t">01</span><span class="e"><span class="en">RIMC, Dehradun</span><span class="hi">आरआईएमसी, देहरादून</span></span></div>
+          <div><span class="t">02</span><span class="e"><span class="en">Rashtriya Military Schools</span><span class="hi">आरएमएस</span></span></div>
+          <div><span class="t">03</span><span class="e"><span class="en">All India Sainik Schools</span><span class="hi">सैनिक स्कूल</span></span></div>
+          <div><span class="t">04</span><span class="e"><span class="en">MNSS Rai</span><span class="hi">एमएनएसएस राय</span></span></div>
+        </div>
+      </div>
+      <div class="shot"><span class="en">Campus photograph</span><span class="hi">परिसर का फ़ोटो</span></div>
+      <div class="ft"><p><span class="en">Admission is by entrance test. Fees are shared on enquiry.</span><span class="hi">दाख़िला प्रवेश परीक्षा से होता है। फ़ीस पूछताछ पर बताई जाती है।</span></p><div class="nums"><span>94682-32364</span><span>72063-22364</span></div></div>
+    </div>
+      </div>
+      <button type="button" class="olike" aria-pressed="false"><span class="tick" aria-hidden="true">✓</span><span class="lt">Like this</span></button>
+    </article>
+    <article class="opt" data-id="E" id="opt-E">
+      <div class="ohead"><span class="obadge">E</span><div class="ometa"><h3>The Slate</h3><p>Dark from top to bottom. Serious and quiet, and a photograph can sit on it without being faded first.</p></div></div>
+      <div class="oshot">
+        <div class="p" style="--bg:#160702;--fg:#FAF6F3;--mute:#BEADA5;--a1:#F7BAA9;--a2:#F9B73F;--barBg:#261106;--barFg:#FAF6F3;--barRule:1px solid #3B2114;--sealBg:#E7A200;--sealFg:#160702;--lgFg:#F9B73F;--lgEdge:1px solid #3B2114;--c1Bg:#B75036;--c1Fg:#FFFDFC;--c2Bg:transparent;--c2Fg:#F7BAA9;--c2Edge:1px solid #F7BAA9;--ftBg:#261106;--ftFg:#BEADA5;--numFg:#F9B73F;--bandARule:2px solid #E7A200;--chipBg:transparent;--chipFg:#F7BAA9;--shotBg:#261106;--shotFg:#BEADA5;--frame:1px solid #3B2114;--rowEdge:#3B2114">
+      <div class="bar"><div class="bd"><div class="seal">D</div><div class="bn">Dayal School of Competition</div></div><div class="lg">हिं</div></div>
+      <div class="hero">
+        <p class="eb" style="color:#F9B73F"><span class="en">Satnali, Haryana · Estd. 1999</span><span class="hi">सतनाली, हरियाणा · Estd. 1999</span></p>
+        <h4><span class="en">Residential schooling and coaching for classes 3 to 10</span><span class="hi">कक्षा 3 से 10 तक आवासीय स्कूली शिक्षा और कोचिंग</span></h4>
+        <p class="lede"><span class="en">With teachers living in residence alongside the students.</span><span class="hi">जहाँ शिक्षक विद्यार्थियों के साथ ही परिसर में रहते हैं।</span></p>
+        <div class="ct"><div class="c1"><span class="en">Call</span><span class="hi">कॉल करें</span></div><div class="c2"><span class="en">WhatsApp</span><span class="hi">व्हाट्सऐप</span></div></div>
+      </div>
+      <div class="bandA">
+        <p class="lab"><span class="en">A gateway to</span><span class="hi">प्रवेशद्वार</span></p>
+        <h5><span class="en">RIMC · RMS · Sainik Schools · MNSS Rai · APS · The Gurukul · JNV</span><span class="hi">आरआईएमसी · आरएमएस · सैनिक स्कूल · एमएनएसएस राय · एपीएस · द गुरुकुल · जेएनवी</span></h5>
+        <div class="chips"><span><span class="en">Stage I · 4–8</span><span class="hi">चरण I · 4–8</span></span><span><span class="en">Stage II · 9–10</span><span class="hi">चरण II · 9–10</span></span></div>
+      </div>
+      <div class="shot"><span class="en">Campus photograph · no scrim needed</span><span class="hi">परिसर का फ़ोटो</span></div>
+      <div class="ft"><p><span class="en">Admission is by entrance test. Fees are shared on enquiry.</span><span class="hi">दाख़िला प्रवेश परीक्षा से होता है। फ़ीस पूछताछ पर बताई जाती है।</span></p><div class="nums"><span>94682-32364</span><span>72063-22364</span></div></div>
+    </div>
+      </div>
+      <button type="button" class="olike" aria-pressed="false"><span class="tick" aria-hidden="true">✓</span><span class="lt">Like this</span></button>
+    </article>
+    <article class="opt" data-id="F" id="opt-F">
+      <div class="ohead"><span class="obadge">F</span><div class="ometa"><h3>Four in the Morning</h3><p>Leads with the daily routine — four in the morning, in big figures. The day itself does the persuading.</p></div></div>
+      <div class="oshot">
+        <div class="p" style="--bg:#FCF5F3;--fg:#150F0D;--mute:#655753;--a1:#933B24;--a2:#E7A200;--barBg:#FFFDFC;--barFg:#150F0D;--sealBg:#160702;--sealFg:#F9B73F;--heroBg:#FFFDFC;--c1Bg:#B75036;--c1Fg:#FFFDFC;--c2Bg:transparent;--c2Fg:#933B24;--c2Edge:1px solid #B75036;--ftBg:#F5EAE7;--ftFg:#655753;--numFg:#933B24;--bandARule:2px solid #150F0D;--clockFg:#933B24;--chipBg:#F5EAE7;--chipFg:#933B24;--chipEdge:0">
+      <div class="bar"><div class="bd"><div class="seal">D</div><div class="bn">Dayal School of Competition</div></div><div class="lg">हिं</div></div>
+      <div class="hero">
+        <p class="clock">04:00</p>
+        <p class="clockcap"><span class="en">Reveille, in summer</span><span class="hi">गर्मियों में जागरण</span></p>
+        <h4><span class="en">Residential schooling and coaching for classes 3 to 10</span><span class="hi">कक्षा 3 से 10 तक आवासीय स्कूली शिक्षा और कोचिंग</span></h4>
+        <p class="lede"><span class="en">With teachers living in residence alongside the students.</span><span class="hi">जहाँ शिक्षक विद्यार्थियों के साथ ही परिसर में रहते हैं।</span></p>
+        <div class="ct"><div class="c1"><span class="en">Call</span><span class="hi">कॉल करें</span></div><div class="c2"><span class="en">WhatsApp</span><span class="hi">व्हाट्सऐप</span></div></div>
+      </div>
+      <div class="bandA">
+        <p class="lab"><span class="en">One day at Dayal School</span><span class="hi">Dayal School में एक दिन</span></p>
+        <div class="rows">
+          <div><span class="t">05:30</span><span class="e"><span class="en">Morning exercise and yoga</span><span class="hi">प्रातःकालीन व्यायाम और योग</span></span></div>
+          <div><span class="t">07:30</span><span class="e"><span class="en">Morning assembly and roll call</span><span class="hi">प्रातःकालीन सभा और रोल कॉल</span></span></div>
+          <div><span class="t">08:00</span><span class="e"><span class="en">Five teaching periods</span><span class="hi">पाँच शिक्षण कालांश</span></span></div>
+          <div><span class="t">22:30</span><span class="e"><span class="en">Lights out</span><span class="hi">बत्ती बंद</span></span></div>
+        </div>
+      </div>
+      <div class="ft"><p><span class="en">In winter reveille is at five. Fees are shared on enquiry.</span><span class="hi">सर्दियों में जागरण पाँच बजे। फ़ीस पूछताछ पर बताई जाती है।</span></p><div class="nums"><span>94682-32364</span><span>72063-22364</span></div></div>
+    </div>
+      </div>
+      <button type="button" class="olike" aria-pressed="false"><span class="tick" aria-hidden="true">✓</span><span class="lt">Like this</span></button>
+    </article>
+  </div>
+</section>
+<section class="group">
+  <h2>Bright and colourful</h2>
+  <p class="gnote">Strong colour throughout. These stand out most on a phone screen in daylight.</p>
+  <div class="opts">
+    <article class="opt" data-id="G" id="opt-G">
+      <div class="ohead"><span class="obadge">G</span><div class="ometa"><h3>Marigold &amp; Rani</h3><p>Deep indigo with marigold and rani pink. Festival colour rather than office colour.</p></div></div>
+      <div class="oshot">
+        <div class="p" style="--bg:#FEF9F1;--fg:#141229;--mute:#4A4A65;--a1:#C10072;--a2:#FFA400;--barBg:#181A55;--barFg:#FCF4E6;--sealBg:#FFA400;--sealFg:#181A55;--lgFg:#FCF4E6;--lgEdge:1px solid #2A306D;--heroBg:#181A55;--heroFg:#FCF4E6;--ebFg:#FFA400;--ledeFg:#FF99C2;--c1Bg:#C10072;--c1Fg:#FEF9F1;--c2Bg:#FFA400;--c2Fg:#141229;--ftBg:#181A55;--ftFg:#FF99C2;--numFg:#FFA400;--bandARule:3px solid #FFA400;--chipBg:#FAEFDC;--chipFg:#9B4E00;--chipEdge:0;--shotBg:#FAEFDC;--shotFg:#4A4A65">
+      <div class="bar"><div class="bd"><div class="seal">D</div><div class="bn">Dayal School of Competition</div></div><div class="lg">हिं</div></div>
+      <div class="hero">
+        <p class="eb"><span class="en">Satnali, Haryana · Estd. 1999</span><span class="hi">सतनाली, हरियाणा · Estd. 1999</span></p>
+        <h4><span class="en">Residential schooling and coaching for classes 3 to 10</span><span class="hi">कक्षा 3 से 10 तक आवासीय स्कूली शिक्षा और कोचिंग</span></h4>
+        <p class="lede"><span class="en">With teachers living in residence alongside the students.</span><span class="hi">जहाँ शिक्षक विद्यार्थियों के साथ ही परिसर में रहते हैं।</span></p>
+        <div class="ct"><div class="c1"><span class="en">Call</span><span class="hi">कॉल करें</span></div><div class="c2"><span class="en">WhatsApp</span><span class="hi">व्हाट्सऐप</span></div></div>
+      </div>
+      <div class="bandA">
+        <p class="lab"><span class="en">A gateway to</span><span class="hi">प्रवेशद्वार</span></p>
+        <h5><span class="en">RIMC, RMS, Sainik Schools, MNSS Rai, APS, The Gurukul and JNV</span><span class="hi">आरआईएमसी, आरएमएस, सैनिक स्कूल, एमएनएसएस राय, एपीएस, द गुरुकुल और जेएनवी</span></h5>
+        <div class="chips"><span><span class="en">Life</span><span class="hi">जीवन</span></span><span><span class="en">Care</span><span class="hi">देखभाल</span></span><span><span class="en">Character</span><span class="hi">चरित्र</span></span><span><span class="en">Excellence</span><span class="hi">उत्कृष्टता</span></span></div>
+      </div>
+      <div class="shot"><span class="en">Campus photograph</span><span class="hi">परिसर का फ़ोटो</span></div>
+      <div class="ft"><p><span class="en">Admission is by entrance test. Fees are shared on enquiry.</span><span class="hi">दाख़िला प्रवेश परीक्षा से होता है। फ़ीस पूछताछ पर बताई जाती है।</span></p><div class="nums"><span>94682-32364</span><span>72063-22364</span></div></div>
+    </div>
+      </div>
+      <button type="button" class="olike" aria-pressed="false"><span class="tick" aria-hidden="true">✓</span><span class="lt">Like this</span></button>
+    </article>
+    <article class="opt" data-id="H" id="opt-H">
+      <div class="ohead"><span class="obadge">H</span><div class="ometa"><h3>Jade Electric</h3><p>Jade green with bright lime and coral. The boldest and brightest of the nineteen.</p></div></div>
+      <div class="oshot">
+        <div class="p sans" style="--bg:#003630;--fg:#E8FAF4;--mute:#F8866C;--a1:#B1EF4A;--a2:#B1EF4A;--barBg:#005A50;--barFg:#E8FAF4;--sealBg:#B1EF4A;--sealFg:#003630;--lgFg:#B1EF4A;--lgEdge:1px solid #B1EF4A;--ebFg:#B1EF4A;--ledeFg:#F8866C;--c1Bg:#B1EF4A;--c1Fg:#003630;--c2Bg:#C1332C;--c2Fg:#F0FEF9;--ftBg:#F0FEF9;--ftFg:#285655;--numFg:#C1332C;--bandARule:2px solid #B1EF4A;--chipBg:transparent;--chipFg:#B1EF4A;--chipR:999px;--shotBg:#005A50;--shotFg:#E8FAF4;--frame:1px solid #005A50;--rowEdge:#005A50">
+      <div class="bar"><div class="bd"><div class="seal">D</div><div class="bn">Dayal School of Competition</div></div><div class="lg">हिं</div></div>
+      <div class="hero">
+        <p class="eb"><span class="en">Satnali, Haryana</span><span class="hi">सतनाली, हरियाणा</span></p>
+        <h4><span class="en">Residential schooling and coaching for classes 3 to 10</span><span class="hi">कक्षा 3 से 10 तक आवासीय स्कूली शिक्षा और कोचिंग</span></h4>
+        <p class="lede"><span class="en">With teachers living in residence alongside the students.</span><span class="hi">जहाँ शिक्षक विद्यार्थियों के साथ ही परिसर में रहते हैं।</span></p>
+        <div class="ct"><div class="c1"><span class="en">Call</span><span class="hi">कॉल करें</span></div><div class="c2"><span class="en">WhatsApp</span><span class="hi">व्हाट्सऐप</span></div></div>
+      </div>
+      <div class="bandA">
+        <p class="lab"><span class="en">A gateway to</span><span class="hi">प्रवेशद्वार</span></p>
+        <h5><span class="en">RIMC · RMS · Sainik Schools · MNSS Rai · APS · The Gurukul · JNV</span><span class="hi">आरआईएमसी · आरएमएस · सैनिक स्कूल · एमएनएसएस राय · एपीएस · द गुरुकुल · जेएनवी</span></h5>
+        <div class="chips"><span><span class="en">Stage I · 4–8</span><span class="hi">चरण I · 4–8</span></span><span><span class="en">Stage II · 9–10</span><span class="hi">चरण II · 9–10</span></span></div>
+      </div>
+      <div class="shot"><span class="en">Campus photograph</span><span class="hi">परिसर का फ़ोटो</span></div>
+      <div class="ft"><p><span class="en">Admission is by entrance test. Fees are shared on enquiry.</span><span class="hi">दाख़िला प्रवेश परीक्षा से होता है। फ़ीस पूछताछ पर बताई जाती है।</span></p><div class="nums"><span>94682-32364</span><span>72063-22364</span></div></div>
+    </div>
+      </div>
+      <button type="button" class="olike" aria-pressed="false"><span class="tick" aria-hidden="true">✓</span><span class="lt">Like this</span></button>
+    </article>
+    <article class="opt" data-id="I" id="opt-I">
+      <div class="ohead"><span class="obadge">I</span><div class="ometa"><h3>Kite Paper</h3><p>Blocks of strong colour separated by thick black lines, like printed kite paper.</p></div></div>
+      <div class="oshot">
+        <div class="p sans" style="--bg:#FCFCF9;--fg:#090D16;--mute:#090D16;--a1:#090D16;--a2:#FDD929;--barBg:#FCFCF9;--barFg:#090D16;--barRule:3px solid #090D16;--sealBg:#090D16;--sealFg:#FDD929;--sealR:0;--lgFg:#090D16;--lgEdge:2px solid #090D16;--heroBg:#FDD929;--ebFg:#090D16;--ledeFg:#090D16;--c1Bg:#6F2FB7;--c1Fg:#FCFCF9;--c1Edge:3px solid #090D16;--c2Bg:#F65EAB;--c2Fg:#090D16;--c2Edge:3px solid #090D16;--ftBg:#090D16;--ftFg:#FCFCF9;--numFg:#FDD929;--bandABg:#009FD6;--bandAFg:#090D16;--labFg:#090D16;--bandARule:3px solid #090D16;--chipBg:#FCFCF9;--chipFg:#090D16;--chipEdge:2px solid #090D16;--shotBg:#24B650;--shotFg:#090D16;--shotRule:3px solid #090D16;--frame:3px solid #090D16;--rowEdge:#090D16">
+      <div class="bar"><div class="bd"><div class="seal">D</div><div class="bn">Dayal School of Competition</div></div><div class="lg">हिं</div></div>
+      <div class="hero">
+        <p class="eb"><span class="en">Satnali, Haryana · Estd. 1999</span><span class="hi">सतनाली, हरियाणा · Estd. 1999</span></p>
+        <h4><span class="en">Residential schooling and coaching for classes 3 to 10</span><span class="hi">कक्षा 3 से 10 तक आवासीय स्कूली शिक्षा और कोचिंग</span></h4>
+        <p class="lede"><span class="en">With teachers living in residence alongside the students.</span><span class="hi">जहाँ शिक्षक विद्यार्थियों के साथ ही परिसर में रहते हैं।</span></p>
+        <div class="ct"><div class="c1"><span class="en">Call</span><span class="hi">कॉल करें</span></div><div class="c2"><span class="en">WhatsApp</span><span class="hi">व्हाट्सऐप</span></div></div>
+      </div>
+      <div class="bandA">
+        <p class="lab"><span class="en">A gateway to</span><span class="hi">प्रवेशद्वार</span></p>
+        <div class="rows">
+          <div><span class="t">01</span><span class="e"><span class="en">RIMC, Dehradun</span><span class="hi">आरआईएमसी, देहरादून</span></span></div>
+          <div><span class="t">02</span><span class="e"><span class="en">Rashtriya Military Schools</span><span class="hi">आरएमएस</span></span></div>
+          <div><span class="t">03</span><span class="e"><span class="en">All India Sainik Schools</span><span class="hi">सैनिक स्कूल</span></span></div>
+        </div>
+      </div>
+      <div class="shot"><span class="en">Campus photograph</span><span class="hi">परिसर का फ़ोटो</span></div>
+      <div class="ft"><p><span class="en">Admission is by entrance test. Fees are shared on enquiry.</span><span class="hi">दाख़िला प्रवेश परीक्षा से होता है। फ़ीस पूछताछ पर बताई जाती है।</span></p><div class="nums"><span>94682-32364</span><span>72063-22364</span></div></div>
+    </div>
+      </div>
+      <button type="button" class="olike" aria-pressed="false"><span class="tick" aria-hidden="true">✓</span><span class="lt">Like this</span></button>
+    </article>
+    <article class="opt" data-id="L" id="opt-L">
+      <div class="ohead"><span class="obadge">L</span><div class="ometa"><h3>Truck Art</h3><p>Deep maroon with gold, turquoise and pink, and a patterned strip between the sections.</p></div></div>
+      <div class="oshot">
+        <div class="p" style="--bg:#240206;--fg:#FFF3E9;--mute:#D6B5AF;--a1:#19D1D2;--a2:#FFD335;--barBg:#3E0A26;--barFg:#FFF3E9;--barRule:2px solid #FFD335;--sealBg:#FFD335;--sealFg:#240206;--lgFg:#19D1D2;--lgEdge:1px solid #19D1D2;--ebFg:#FF9044;--c1Bg:#FF9044;--c1Fg:#240206;--c2Bg:#AC0084;--c2Fg:#FFF3E9;--ftBg:#3E0A26;--ftFg:#D6B5AF;--numFg:#FFD335;--bandARule:2px solid #EC3EBA;--chipBg:#3E0A26;--chipFg:#FFD335;--chipEdge:1px solid #EC3EBA;--shotBg:#3E0A26;--shotFg:#D6B5AF;--shotRule:2px solid #19D1D2;--frame:2px solid #FFD335;--rowEdge:#3E0A26">
+      <div class="bar"><div class="bd"><div class="seal">D</div><div class="bn">Dayal School of Competition</div></div><div class="lg">हिं</div></div>
+      <div class="hero">
+        <p class="eb"><span class="en">Satnali, Haryana</span><span class="hi">सतनाली, हरियाणा</span></p>
+        <h4><span class="en">Residential schooling and coaching for classes 3 to 10</span><span class="hi">कक्षा 3 से 10 तक आवासीय स्कूली शिक्षा और कोचिंग</span></h4>
+        <p class="lede"><span class="en">With teachers living in residence alongside the students.</span><span class="hi">जहाँ शिक्षक विद्यार्थियों के साथ ही परिसर में रहते हैं।</span></p>
+        <div class="ct"><div class="c1"><span class="en">Call</span><span class="hi">कॉल करें</span></div><div class="c2"><span class="en">WhatsApp</span><span class="hi">व्हाट्सऐप</span></div></div>
+      </div>
+      <div class="rule" style="--ruleH:10px;--ruleBg:repeating-linear-gradient(135deg,#FFD335 0 8px,#EC3EBA 8px 16px,#19D1D2 16px 24px,#FF9044 24px 32px)"></div>
+      <div class="bandA">
+        <p class="lab"><span class="en">A gateway to</span><span class="hi">प्रवेशद्वार</span></p>
+        <h5><span class="en">RIMC, RMS, Sainik Schools, MNSS Rai, APS, The Gurukul and JNV</span><span class="hi">आरआईएमसी, आरएमएस, सैनिक स्कूल, एमएनएसएस राय, एपीएस, द गुरुकुल और जेएनवी</span></h5>
+        <div class="chips"><span><span class="en">Life</span><span class="hi">जीवन</span></span><span><span class="en">Care</span><span class="hi">देखभाल</span></span><span><span class="en">Character</span><span class="hi">चरित्र</span></span><span><span class="en">Excellence</span><span class="hi">उत्कृष्टता</span></span></div>
+      </div>
+      <div class="shot"><span class="en">Campus photograph</span><span class="hi">परिसर का फ़ोटो</span></div>
+      <div class="ft"><p><span class="en">Admission is by entrance test. Fees are shared on enquiry.</span><span class="hi">दाख़िला प्रवेश परीक्षा से होता है। फ़ीस पूछताछ पर बताई जाती है।</span></p><div class="nums"><span>94682-32364</span><span>72063-22364</span></div></div>
+    </div>
+      </div>
+      <button type="button" class="olike" aria-pressed="false"><span class="tick" aria-hidden="true">✓</span><span class="lt">Like this</span></button>
+    </article>
+    <article class="opt" data-id="M" id="opt-M">
+      <div class="ohead"><span class="obadge">M</span><div class="ometa"><h3>Dawn</h3><p>A sky behind the school name, from night to sunrise, then warm daylight below it.</p></div></div>
+      <div class="oshot">
+        <div class="p" style="--bg:#FFF9F4;--fg:#170E27;--mute:#524569;--a1:#9A0060;--a2:#FFD576;--barBg:#19083A;--barFg:#FFF7F0;--sealBg:#FFD576;--sealFg:#19083A;--lgFg:#FFD576;--lgEdge:1px solid #9A0060;--heroBg:linear-gradient(170deg,#19083A 0%,#9A0060 100%);--heroFg:#FFF7F0;--ebFg:#FFD576;--ledeFg:#FFF7F0;--c1Bg:#9A0060;--c1Fg:#FFF9F4;--c2Bg:#FFD576;--c2Fg:#170E27;--ftBg:#19083A;--ftFg:#FFF7F0;--numFg:#FFD576;--clockFg:#FFD576;--bandABg:linear-gradient(170deg,#FF824F 0%,#FFD576 100%);--bandAFg:#170E27;--labFg:#170E27;--chipBg:#FFEAD9;--chipFg:#95005D;--chipEdge:0;--shotBg:#FFEAD9;--shotFg:#524569;--rowEdge:#FFEAD9">
+      <div class="bar"><div class="bd"><div class="seal">D</div><div class="bn">Dayal School of Competition</div></div><div class="lg">हिं</div></div>
+      <div class="hero">
+        <p class="clock">04:00</p>
+        <p class="clockcap" style="color:#FFF7F0"><span class="en">Reveille, in summer</span><span class="hi">गर्मियों में जागरण</span></p>
+        <h4><span class="en">Residential schooling and coaching for classes 3 to 10</span><span class="hi">कक्षा 3 से 10 तक आवासीय स्कूली शिक्षा और कोचिंग</span></h4>
+        <p class="lede"><span class="en">With teachers living in residence alongside the students.</span><span class="hi">जहाँ शिक्षक विद्यार्थियों के साथ ही परिसर में रहते हैं।</span></p>
+        <div class="ct"><div class="c1"><span class="en">Call</span><span class="hi">कॉल करें</span></div><div class="c2"><span class="en">WhatsApp</span><span class="hi">व्हाट्सऐप</span></div></div>
+      </div>
+      <div class="bandA">
+        <p class="lab"><span class="en">One day at Dayal School</span><span class="hi">Dayal School में एक दिन</span></p>
+        <h5><span class="en">A roll call follows fifteen minutes later.</span><span class="hi">पंद्रह मिनट बाद रोल कॉल होता है।</span></h5>
+      </div>
+      <div class="bandB">
+        <p class="lab"><span class="en">A gateway to</span><span class="hi">प्रवेशद्वार</span></p>
+        <div class="rows">
+          <div><span class="t">07:30</span><span class="e"><span class="en">Morning assembly and roll call</span><span class="hi">प्रातःकालीन सभा और रोल कॉल</span></span></div>
+          <div><span class="t">22:30</span><span class="e"><span class="en">Lights out</span><span class="hi">बत्ती बंद</span></span></div>
+        </div>
+      </div>
+      <div class="shot"><span class="en">Campus photograph</span><span class="hi">परिसर का फ़ोटो</span></div>
+      <div class="ft"><p><span class="en">Admission is by entrance test. Fees are shared on enquiry.</span><span class="hi">दाख़िला प्रवेश परीक्षा से होता है। फ़ीस पूछताछ पर बताई जाती है।</span></p><div class="nums"><span>94682-32364</span><span>72063-22364</span></div></div>
+    </div>
+      </div>
+      <button type="button" class="olike" aria-pressed="false"><span class="tick" aria-hidden="true">✓</span><span class="lt">Like this</span></button>
+    </article>
+    <article class="opt" data-id="N" id="opt-N">
+      <div class="ohead"><span class="obadge">N</span><div class="ometa"><h3>Highlighter</h3><p>Ruled paper, ballpoint blue and highlighter pen — a child’s exercise book.</p></div></div>
+      <div class="oshot">
+        <div class="p sans" style="--bg:#FEFDFC;--fg:#070B14;--mute:#070B14;--a1:#1631A0;--a2:#BB061E;--barBg:#FEFDFC;--barFg:#070B14;--barRule:2px solid #070B14;--sealBg:#1631A0;--sealFg:#FEFDFC;--lgFg:#1631A0;--lgEdge:2px solid #1631A0;--heroBg:repeating-linear-gradient(180deg,transparent 0 27px,#E8EEF6 27px 28px);--ebFg:#1631A0;--c1Bg:#1631A0;--c1Fg:#FEFDFC;--c2Bg:#FFEA6B;--c2Fg:#070B14;--c2Edge:2px solid #070B14;--ftBg:#070B14;--ftFg:#FEFDFC;--numFg:#FFEA6B;--labFg:#BB061E;--bandARule:2px solid #070B14;--chipBg:#FFEA6B;--chipFg:#070B14;--chipEdge:0;--shotBg:#F2F0EB;--shotFg:#070B14;--shotRule:2px solid #070B14;--frame:1px solid #E3E0DA;--rowEdge:#C9C4BC">
+      <div class="bar"><div class="bd"><div class="seal">D</div><div class="bn">Dayal School of Competition</div></div><div class="lg">हिं</div></div>
+      <div class="hero">
+        <p class="eb"><span class="en">Satnali, Haryana · Estd. 1999</span><span class="hi">सतनाली, हरियाणा · Estd. 1999</span></p>
+        <h4><span class="en">Residential schooling and coaching for <span class="hl">classes 3 to 10</span></span><span class="hi"><span class="hl">कक्षा 3 से 10</span> तक आवासीय स्कूली शिक्षा और कोचिंग</span></h4>
+        <p class="lede"><span class="en">With teachers <span class="hl" style="--hlC:#4AE9FB">living in residence</span> alongside the students.</span><span class="hi">जहाँ <span class="hl" style="--hlC:#4AE9FB">शिक्षक परिसर में ही रहते हैं</span>।</span></p>
+        <div class="ct"><div class="c1"><span class="en">Call</span><span class="hi">कॉल करें</span></div><div class="c2"><span class="en">WhatsApp</span><span class="hi">व्हाट्सऐप</span></div></div>
+      </div>
+      <div class="bandA">
+        <p class="lab"><span class="en">A gateway to</span><span class="hi">प्रवेशद्वार</span></p>
+        <h5><span class="en">Seven schools, and the <span class="hl" style="--hlC:#7FFC73">entrance test</span> for each</span><span class="hi">सात विद्यालय, और हर एक की <span class="hl" style="--hlC:#7FFC73">प्रवेश परीक्षा</span></span></h5>
+        <div class="chips"><span><span class="en">Life</span><span class="hi">जीवन</span></span><span><span class="en">Care</span><span class="hi">देखभाल</span></span><span><span class="en">Character</span><span class="hi">चरित्र</span></span><span><span class="en">Excellence</span><span class="hi">उत्कृष्टता</span></span></div>
+      </div>
+      <div class="shot"><span class="en">Campus photograph</span><span class="hi">परिसर का फ़ोटो</span></div>
+      <div class="ft"><p><span class="en">Admission is by entrance test. Fees are shared on enquiry.</span><span class="hi">दाख़िला प्रवेश परीक्षा से होता है। फ़ीस पूछताछ पर बताई जाती है।</span></p><div class="nums"><span>94682-32364</span><span>72063-22364</span></div></div>
+    </div>
+      </div>
+      <button type="button" class="olike" aria-pressed="false"><span class="tick" aria-hidden="true">✓</span><span class="lt">Like this</span></button>
+    </article>
+    <article class="opt" data-id="O" id="opt-O">
+      <div class="ohead"><span class="obadge">O</span><div class="ometa"><h3>Peacock</h3><p>Dark ink-blue with peacock green and gold. Rich colour that stays easy to read.</p></div></div>
+      <div class="oshot">
+        <div class="p" style="--bg:#00171D;--fg:#EAF9F7;--mute:#99C9C5;--a1:#00CFA6;--a2:#FDCA3A;--barBg:#002D31;--barFg:#EAF9F7;--barRule:1px solid #00CFA6;--sealBg:#FDCA3A;--sealFg:#00171D;--lgFg:#00CFA6;--lgEdge:1px solid #00CFA6;--ebFg:#FDCA3A;--c1Bg:#00CFA6;--c1Fg:#00171D;--c2Bg:#A7118B;--c2Fg:#EAF9F7;--ftBg:#002D31;--ftFg:#99C9C5;--numFg:#FDCA3A;--bandARule:2px solid #00CFA6;--chipBg:#002D31;--chipFg:#E668C7;--chipEdge:1px solid #A7118B;--shotBg:#002D31;--shotFg:#99C9C5;--frame:1px solid #002D31;--rowEdge:#002D31">
+      <div class="bar"><div class="bd"><div class="seal">D</div><div class="bn">Dayal School of Competition</div></div><div class="lg">हिं</div></div>
+      <div class="hero">
+        <p class="eb"><span class="en">Satnali, Haryana · Estd. 1999</span><span class="hi">सतनाली, हरियाणा · Estd. 1999</span></p>
+        <h4><span class="en">Residential schooling and coaching for classes 3 to 10</span><span class="hi">कक्षा 3 से 10 तक आवासीय स्कूली शिक्षा और कोचिंग</span></h4>
+        <p class="lede"><span class="en">With teachers living in residence alongside the students.</span><span class="hi">जहाँ शिक्षक विद्यार्थियों के साथ ही परिसर में रहते हैं।</span></p>
+        <div class="ct"><div class="c1"><span class="en">Call</span><span class="hi">कॉल करें</span></div><div class="c2"><span class="en">WhatsApp</span><span class="hi">व्हाट्सऐप</span></div></div>
+      </div>
+      <div class="bandA">
+        <p class="lab"><span class="en">A gateway to</span><span class="hi">प्रवेशद्वार</span></p>
+        <h5><span class="en">RIMC · RMS · Sainik Schools · MNSS Rai · APS · The Gurukul · JNV</span><span class="hi">आरआईएमसी · आरएमएस · सैनिक स्कूल · एमएनएसएस राय · एपीएस · द गुरुकुल · जेएनवी</span></h5>
+        <div class="chips"><span><span class="en">Stage I · 4–8</span><span class="hi">चरण I · 4–8</span></span><span><span class="en">Stage II · 9–10</span><span class="hi">चरण II · 9–10</span></span></div>
+      </div>
+      <div class="shot"><span class="en">Campus photograph</span><span class="hi">परिसर का फ़ोटो</span></div>
+      <div class="ft"><p><span class="en">Admission is by entrance test. Fees are shared on enquiry.</span><span class="hi">दाख़िला प्रवेश परीक्षा से होता है। फ़ीस पूछताछ पर बताई जाती है।</span></p><div class="nums"><span>94682-32364</span><span>72063-22364</span></div></div>
+    </div>
+      </div>
+      <button type="button" class="olike" aria-pressed="false"><span class="tick" aria-hidden="true">✓</span><span class="lt">Like this</span></button>
+    </article>
+    <article class="opt" data-id="P" id="opt-P">
+      <div class="ohead"><span class="obadge">P</span><div class="ometa"><h3>Mango &amp; Chilli</h3><p>A bright mango-yellow page with chilli red and deep green. Warm and loud at the same time.</p></div></div>
+      <div class="oshot">
+        <div class="p" style="--bg:#FFD79A;--fg:#2A0B00;--mute:#673B26;--a1:#B7000B;--a2:#006430;--barBg:#FFFDFA;--barFg:#2A0B00;--barRule:2px solid #B7000B;--sealBg:#B7000B;--sealFg:#FFFDFA;--lgFg:#B7000B;--lgEdge:2px solid #B7000B;--ebFg:#B7000B;--c1Bg:#B7000B;--c1Fg:#FFFDFA;--c2Bg:#006430;--c2Fg:#FFFDFA;--ftBg:#2A0B00;--ftFg:#FFD79A;--numFg:#FFD79A;--bandABg:#FFEED4;--bandARule:2px solid #2A0B00;--chipBg:#FFA191;--chipFg:#2A0B00;--chipEdge:0;--shotBg:#FFEED4;--shotFg:#673B26;--shotRule:2px solid #2A0B00;--frame:2px solid #2A0B00;--rowEdge:#E0B681">
+      <div class="bar"><div class="bd"><div class="seal">D</div><div class="bn">Dayal School of Competition</div></div><div class="lg">हिं</div></div>
+      <div class="hero">
+        <p class="eb"><span class="en">Satnali, Haryana · Estd. 1999</span><span class="hi">सतनाली, हरियाणा · Estd. 1999</span></p>
+        <h4><span class="en">Residential schooling and coaching for classes 3 to 10</span><span class="hi">कक्षा 3 से 10 तक आवासीय स्कूली शिक्षा और कोचिंग</span></h4>
+        <p class="lede"><span class="en">With teachers living in residence alongside the students.</span><span class="hi">जहाँ शिक्षक विद्यार्थियों के साथ ही परिसर में रहते हैं।</span></p>
+        <div class="ct"><div class="c1"><span class="en">Call</span><span class="hi">कॉल करें</span></div><div class="c2"><span class="en">WhatsApp</span><span class="hi">व्हाट्सऐप</span></div></div>
+      </div>
+      <div class="bandA">
+        <p class="lab"><span class="en">A gateway to</span><span class="hi">प्रवेशद्वार</span></p>
+        <h5><span class="en">RIMC, RMS, Sainik Schools, MNSS Rai, APS, The Gurukul and JNV</span><span class="hi">आरआईएमसी, आरएमएस, सैनिक स्कूल, एमएनएसएस राय, एपीएस, द गुरुकुल और जेएनवी</span></h5>
+        <div class="chips"><span><span class="en">Life</span><span class="hi">जीवन</span></span><span><span class="en">Care</span><span class="hi">देखभाल</span></span><span><span class="en">Character</span><span class="hi">चरित्र</span></span><span><span class="en">Excellence</span><span class="hi">उत्कृष्टता</span></span></div>
+      </div>
+      <div class="shot"><span class="en">Campus photograph</span><span class="hi">परिसर का फ़ोटो</span></div>
+      <div class="ft"><p><span class="en">Admission is by entrance test. Fees are shared on enquiry.</span><span class="hi">दाख़िला प्रवेश परीक्षा से होता है। फ़ीस पूछताछ पर बताई जाती है।</span></p><div class="nums"><span>94682-32364</span><span>72063-22364</span></div></div>
+    </div>
+      </div>
+      <button type="button" class="olike" aria-pressed="false"><span class="tick" aria-hidden="true">✓</span><span class="lt">Like this</span></button>
+    </article>
+    <article class="opt" data-id="Q" id="opt-Q">
+      <div class="ohead"><span class="obadge">Q</span><div class="ometa"><h3>Rangoli</h3><p>A white page with four strong colours laid in blocks — vermilion, indigo, marigold and green.</p></div></div>
+      <div class="oshot">
+        <div class="p centre" style="--bg:#FEFDFB;--fg:#090B12;--mute:#3A3A44;--a1:#D72824;--a2:#2141A8;--barBg:#FEFDFB;--barFg:#090B12;--barRule:2px solid #090B12;--sealBg:#2141A8;--sealFg:#FEFDFB;--lgFg:#2141A8;--lgEdge:2px solid #2141A8;--ebFg:#D72824;--c1Bg:#2141A8;--c1Fg:#FEFDFB;--c2Bg:#FFC84C;--c2Fg:#090B12;--ftBg:#090B12;--ftFg:#FEFDFB;--numFg:#FFC84C;--bandABg:#2141A8;--bandAFg:#FEFDFB;--labFg:#FFC84C;--chipBg:#FEFDFB;--chipFg:#090B12;--chipEdge:0;--shotBg:#007E49;--shotFg:#FEFDFB;--frame:2px solid #090B12;--rowEdge:#D9D5CE">
+      <div class="bar"><div class="bd"><div class="seal">D</div><div class="bn">Dayal School of Competition</div></div><div class="lg">हिं</div></div>
+      <div class="rule" style="--ruleH:8px;--ruleBg:repeating-linear-gradient(90deg,#D72824 0 18px,#FFC84C 18px 36px,#007E49 36px 54px,#2141A8 54px 72px)"></div>
+      <div class="hero">
+        <p class="eb"><span class="en">Satnali, Haryana · Estd. 1999</span><span class="hi">सतनाली, हरियाणा · Estd. 1999</span></p>
+        <h4><span class="en">Residential schooling and coaching for classes 3 to 10</span><span class="hi">कक्षा 3 से 10 तक आवासीय स्कूली शिक्षा और कोचिंग</span></h4>
+        <p class="lede"><span class="en">With teachers living in residence alongside the students.</span><span class="hi">जहाँ शिक्षक विद्यार्थियों के साथ ही परिसर में रहते हैं।</span></p>
+        <div class="ct"><div class="c1"><span class="en">Call</span><span class="hi">कॉल करें</span></div><div class="c2"><span class="en">WhatsApp</span><span class="hi">व्हाट्सऐप</span></div></div>
+      </div>
+      <div class="bandA">
+        <p class="lab"><span class="en">More than coaching</span><span class="hi">कोचिंग से कहीं अधिक</span></p>
+        <h5><span class="en">More than marks. More than exams.</span><span class="hi">अंकों से बढ़कर। परीक्षाओं से बढ़कर।</span></h5>
+        <div class="chips"><span><span class="en">Life</span><span class="hi">जीवन</span></span><span><span class="en">Care</span><span class="hi">देखभाल</span></span><span><span class="en">Character</span><span class="hi">चरित्र</span></span><span><span class="en">Excellence</span><span class="hi">उत्कृष्टता</span></span></div>
+      </div>
+      <div class="shot"><span class="en">Campus photograph</span><span class="hi">परिसर का फ़ोटो</span></div>
+      <div class="ft"><p><span class="en">Admission is by entrance test. Fees are shared on enquiry.</span><span class="hi">दाख़िला प्रवेश परीक्षा से होता है। फ़ीस पूछताछ पर बताई जाती है।</span></p><div class="nums"><span>94682-32364</span><span>72063-22364</span></div></div>
+    </div>
+      </div>
+      <button type="button" class="olike" aria-pressed="false"><span class="tick" aria-hidden="true">✓</span><span class="lt">Like this</span></button>
+    </article>
+  </div>
+</section>
+<section class="group">
+  <h2>Plain and white</h2>
+  <p class="gnote">A white page, with one colour used sparingly. The calmest of the three groups.</p>
+  <div class="opts">
+    <article class="opt" data-id="R" id="opt-R">
+      <div class="ohead"><span class="obadge">R</span><div class="ometa"><h3>Hairline</h3><p>Pure white, thin lines and type only. Very plain and very calm.</p></div></div>
+      <div class="oshot">
+        <div class="p" style="--bg:#FFFFFF;--fg:#150D0B;--mute:#645B59;--a1:#8F1714;--a2:#150D0B;--frame:1px solid #D5D0CE;--barBg:#FFFFFF;--barFg:#150D0B;--barRule:1px solid #150D0B;--sealBg:transparent;--sealFg:#150D0B;--sealEdge:1px solid #150D0B;--sealR:0;--lgFg:#645B59;--lgEdge:1px solid #D5D0CE;--ebFg:#8F1714;--ledeFg:#645B59;--c1Bg:#150D0B;--c1Fg:#FFFFFF;--c2Bg:transparent;--c2Fg:#150D0B;--c2Edge:1px solid #150D0B;--bandARule:1px solid #D5D0CE;--bandBRule:1px solid #D5D0CE;--labFg:#8F1714;--rowEdge:#D5D0CE;--shotBg:#FFFFFF;--shotFg:#645B59;--shotRule:1px solid #D5D0CE;--ftBg:#FFFFFF;--ftFg:#645B59;--ftRule:1px solid #150D0B;--numFg:#150D0B">
+      <div class="bar"><div class="bd"><div class="seal">D</div><div class="bn">Dayal School of Competition</div></div><div class="lg">हिं</div></div><div class="hero"><p class="eb"><span class="en">Satnali, Haryana · Estd. 1999</span><span class="hi">सतनाली, हरियाणा · Estd. 1999</span></p><h4><span class="en">Residential schooling and coaching for classes 3 to 10</span><span class="hi">कक्षा 3 से 10 तक आवासीय स्कूली शिक्षा और कोचिंग</span></h4><p class="lede"><span class="en">With teachers living in residence alongside the students.</span><span class="hi">जहाँ शिक्षक विद्यार्थियों के साथ ही परिसर में रहते हैं।</span></p><div class="ct"><div class="c1"><span class="en">Call</span><span class="hi">कॉल करें</span></div><div class="c2"><span class="en">WhatsApp</span><span class="hi">व्हाट्सऐप</span></div></div></div><div class="bandA"><p class="lab"><span class="en">A gateway to</span><span class="hi">प्रवेशद्वार</span></p><h5><span class="en">Seven schools, and the entrance test for each</span><span class="hi">सात विद्यालय, और हर एक की प्रवेश परीक्षा</span></h5><div class="rows"><div><span class="t">01</span><span class="e"><strong>RIMC</strong> — Rashtriya Indian Military College</span></div><div><span class="t">02</span><span class="e"><strong>RMS</strong> — Rashtriya Military Schools</span></div><div><span class="t">03</span><span class="e"><strong>AISSEE</strong> — All India Sainik Schools Entrance Exam</span></div><div><span class="t">04</span><span class="e"><strong>MNSS</strong> — Motilal Nehru School of Sports, Rai</span></div><div><span class="t">05</span><span class="e"><strong>APS</strong> — Army Public School, Dagshai</span></div><div><span class="t">06</span><span class="e"><strong>Gurukul</strong> — The Gurukul Kurukshetra</span></div><div><span class="t">07</span><span class="e"><strong>JNV</strong> — Jawahar Navodaya Vidyalaya</span></div></div></div><div class="shot"><span class="en">Campus photograph · no file on disk</span><span class="hi">परिसर का फ़ोटो</span></div><div class="ft"><p><span class="en">Admission is by entrance test. Fees are shared on enquiry.</span><span class="hi">दाख़िला प्रवेश परीक्षा से होता है। फ़ीस पूछताछ पर बताई जाती है।</span></p><div class="nums"><span>94682-32364</span><span>72063-22364</span></div></div>
+    </div>
+      </div>
+      <button type="button" class="olike" aria-pressed="false"><span class="tick" aria-hidden="true">✓</span><span class="lt">Like this</span></button>
+    </article>
+    <article class="opt" data-id="S" id="opt-S">
+      <div class="ohead"><span class="obadge">S</span><div class="ometa"><h3>The Wide Margin</h3><p>White, with one indigo line running down the left-hand side of the whole page.</p></div></div>
+      <div class="oshot">
+        <div class="p sans rail" style="--bg:#FFFFFF;--fg:#0F111B;--mute:#60636E;--a1:#2F3C94;--a2:#2F3C94;--frame:1px solid #D5D7DE;--barBg:#FFFFFF;--barFg:#0F111B;--barRule:1px solid #D5D7DE;--sealBg:#2F3C94;--sealFg:#FFFFFF;--sealR:0;--lgFg:#2F3C94;--lgEdge:1px solid #2F3C94;--ebFg:#2F3C94;--ledeFg:#60636E;--c1Bg:#2F3C94;--c1Fg:#FFFFFF;--c2Bg:transparent;--c2Fg:#0F111B;--c2Edge:1px solid #D5D7DE;--bandBBg:#F5F6FB;--bandARule:1px solid #D5D7DE;--labFg:#2F3C94;--rowEdge:#D5D7DE;--chipBg:#F5F6FB;--chipFg:#2F3C94;--chipEdge:0;--shotBg:#F5F6FB;--shotFg:#60636E;--ftBg:#FFFFFF;--ftFg:#60636E;--ftRule:1px solid #D5D7DE;--numFg:#0F111B">
+      <div class="bar"><div class="bd"><div class="seal">D</div><div class="bn">Dayal School of Competition</div></div><div class="lg">हिं</div></div><div class="hero"><p class="eb"><span class="en">Satnali, Mahendergarh district</span><span class="hi">सतनाली, महेंद्रगढ़ ज़िला</span></p><h4><span class="en">Residential schooling and coaching for classes 3 to 10</span><span class="hi">कक्षा 3 से 10 तक आवासीय स्कूली शिक्षा और कोचिंग</span></h4><p class="lede"><span class="en">With teachers living in residence alongside the students.</span><span class="hi">जहाँ शिक्षक विद्यार्थियों के साथ ही परिसर में रहते हैं।</span></p><div class="ct"><div class="c1"><span class="en">Call</span><span class="hi">कॉल करें</span></div><div class="c2"><span class="en">WhatsApp</span><span class="hi">व्हाट्सऐप</span></div></div></div><div class="bandA"><p class="lab"><span class="en">A gateway to</span><span class="hi">प्रवेशद्वार</span></p><h5><span class="en">RIMC, RMS, Sainik Schools, MNSS Rai, APS Dagshai, The Gurukul and JNV</span><span class="hi">आरआईएमसी, आरएमएस, सैनिक स्कूल, एमएनएसएस राय, एपीएस, द गुरुकुल और जेएनवी</span></h5><div class="chips"><span><span class="en">Stage I · 4–8</span><span class="hi">चरण I · 4–8</span></span><span><span class="en">Stage II · 9–10</span><span class="hi">चरण II · 9–10</span></span></div></div><div class="bandB"><p class="lab"><span class="en">One day at Dayal School</span><span class="hi">Dayal School में एक दिन</span></p><h5><span class="en">From reveille to lights out</span><span class="hi">जागरण से बत्ती बंद तक</span></h5><div class="rows"><div><span class="t">04:00</span><span class="e"><span class="en">Reveille — wake up and freshen up</span><span class="hi">जागरण — उठना और तैयार होना</span></span></div><div><span class="t">05:30</span><span class="e"><span class="en">Morning exercise and yoga</span><span class="hi">प्रातःकालीन व्यायाम और योग</span></span></div><div><span class="t">08:00</span><span class="e"><span class="en">Five teaching periods</span><span class="hi">पाँच शिक्षण कालांश</span></span></div><div><span class="t">18:15</span><span class="e"><span class="en">Games, outdoor or indoor</span><span class="hi">खेल (मैदानी या कक्ष में)</span></span></div><div><span class="t">22:30</span><span class="e"><span class="en">Lights out</span><span class="hi">बत्ती बंद</span></span></div></div></div><div class="ft"><p><span class="en">Admission is by entrance test. Fees are shared on enquiry.</span><span class="hi">दाख़िला प्रवेश परीक्षा से होता है। फ़ीस पूछताछ पर बताई जाती है।</span></p><div class="nums"><span>94682-32364</span><span>72063-22364</span></div></div>
+    </div>
+      </div>
+      <button type="button" class="olike" aria-pressed="false"><span class="tick" aria-hidden="true">✓</span><span class="lt">Like this</span></button>
+    </article>
+    <article class="opt" data-id="T" id="opt-T">
+      <div class="ohead"><span class="obadge">T</span><div class="ometa"><h3>Quiet Green</h3><p>White with a lot of space and a single forest green. The quietest of all of them.</p></div></div>
+      <div class="oshot">
+        <div class="p airy" style="--bg:#FFFFFF;--fg:#0D1611;--mute:#59635D;--a1:#005634;--a2:#005634;--frame:1px solid #D2DAD5;--barBg:#FFFFFF;--barFg:#0D1611;--barRule:1px solid #D2DAD5;--sealBg:transparent;--sealFg:#005634;--sealEdge:1px solid #005634;--lgFg:#59635D;--lgEdge:1px solid #D2DAD5;--ebFg:#005634;--ledeFg:#59635D;--c1Bg:#005634;--c1Fg:#FFFFFF;--c2Bg:transparent;--c2Fg:#005634;--c2Edge:1px solid #005634;--bandABg:#F3F8F5;--bandARule:1px solid #D2DAD5;--labFg:#005634;--rowEdge:#D2DAD5;--chipBg:transparent;--chipFg:#0D1611;--chipEdge:1px solid #D2DAD5;--shotBg:#F3F8F5;--shotFg:#59635D;--ftBg:#FFFFFF;--ftFg:#59635D;--ftRule:1px solid #D2DAD5;--numFg:#005634">
+      <div class="bar"><div class="bd"><div class="seal">D</div><div class="bn">Dayal School of Competition</div></div><div class="lg">हिं</div></div><div class="hero"><p class="eb"><span class="en">Established 1999 · Satnali, Haryana</span><span class="hi">स्थापना 1999 · सतनाली, हरियाणा</span></p><h4><span class="en">Residential schooling and coaching for classes 3 to 10</span><span class="hi">कक्षा 3 से 10 तक आवासीय स्कूली शिक्षा और कोचिंग</span></h4><p class="lede"><span class="en">With teachers living in residence alongside the students.</span><span class="hi">जहाँ शिक्षक विद्यार्थियों के साथ ही परिसर में रहते हैं।</span></p><div class="ct"><div class="c1"><span class="en">Call</span><span class="hi">कॉल करें</span></div><div class="c2"><span class="en">WhatsApp</span><span class="hi">व्हाट्सऐप</span></div></div></div><div class="bandA"><p class="lab"><span class="en">A gateway to</span><span class="hi">प्रवेशद्वार</span></p><h5><span class="en">RIMC, RMS, Sainik Schools, MNSS Rai, APS Dagshai, The Gurukul and JNV</span><span class="hi">आरआईएमसी, आरएमएस, सैनिक स्कूल, एमएनएसएस राय, एपीएस, द गुरुकुल और जेएनवी</span></h5><div class="chips"><span><span class="en">Stage I · 4–8</span><span class="hi">चरण I · 4–8</span></span><span><span class="en">Stage II · 9–10</span><span class="hi">चरण II · 9–10</span></span></div></div><div class="shot"><span class="en">Campus photograph · no file on disk</span><span class="hi">परिसर का फ़ोटो</span></div><div class="ft"><p><span class="en">Admission is by entrance test. Fees are shared on enquiry.</span><span class="hi">दाख़िला प्रवेश परीक्षा से होता है। फ़ीस पूछताछ पर बताई जाती है।</span></p><div class="nums"><span>94682-32364</span><span>72063-22364</span></div></div>
+    </div>
+      </div>
+      <button type="button" class="olike" aria-pressed="false"><span class="tick" aria-hidden="true">✓</span><span class="lt">Like this</span></button>
+    </article>
+    <article class="opt" data-id="U" id="opt-U">
+      <div class="ohead"><span class="obadge">U</span><div class="ometa"><h3>Graphite</h3><p>Grey and white with one red. Modern and plain, with the four-o’clock start up front.</p></div></div>
+      <div class="oshot">
+        <div class="p sans" style="--bg:#FFFFFF;--fg:#151618;--mute:#616365;--a1:#CC2B0E;--a2:#151618;--frame:1px solid #DCDEE0;--barBg:#FFFFFF;--barFg:#151618;--barRule:1px solid #DCDEE0;--sealBg:#151618;--sealFg:#FFFFFF;--sealR:0;--lgFg:#616365;--lgEdge:1px solid #DCDEE0;--ebFg:#CC2B0E;--ledeFg:#616365;--c1Bg:#CC2B0E;--c1Fg:#FFFFFF;--c2Bg:transparent;--c2Fg:#151618;--c2Edge:1px solid #151618;--bandARule:1px solid #DCDEE0;--bandBBg:#F3F4F6;--labFg:#616365;--rowEdge:#DCDEE0;--chipBg:#F3F4F6;--chipFg:#151618;--chipEdge:0;--clockFg:#151618;--shotBg:#F3F4F6;--shotFg:#616365;--ftBg:#151618;--ftFg:#B8BABC;--numFg:#FFFFFF">
+      <div class="bar"><div class="bd"><div class="seal">D</div><div class="bn">Dayal School of Competition</div></div><div class="lg">हिं</div></div><div class="hero"><p class="eb"><span class="en">Reveille, in summer</span><span class="hi">गर्मियों में जागरण</span></p><p class="clock">04:00</p><h4><span class="en">Residential schooling and coaching for classes 3 to 10</span><span class="hi">कक्षा 3 से 10 तक आवासीय स्कूली शिक्षा और कोचिंग</span></h4><p class="lede"><span class="en">With teachers living in residence alongside the students.</span><span class="hi">जहाँ शिक्षक विद्यार्थियों के साथ ही परिसर में रहते हैं।</span></p><div class="ct"><div class="c1"><span class="en">Call</span><span class="hi">कॉल करें</span></div><div class="c2"><span class="en">WhatsApp</span><span class="hi">व्हाट्सऐप</span></div></div></div><div class="bandA"><p class="lab"><span class="en">A gateway to</span><span class="hi">प्रवेशद्वार</span></p><h5><span class="en">RIMC, RMS, Sainik Schools, MNSS Rai, APS Dagshai, The Gurukul and JNV</span><span class="hi">आरआईएमसी, आरएमएस, सैनिक स्कूल, एमएनएसएस राय, एपीएस, द गुरुकुल और जेएनवी</span></h5><div class="chips"><span><span class="en">Stage I · 4–8</span><span class="hi">चरण I · 4–8</span></span><span><span class="en">Stage II · 9–10</span><span class="hi">चरण II · 9–10</span></span></div></div><div class="bandB"><p class="lab"><span class="en">One day at Dayal School</span><span class="hi">Dayal School में एक दिन</span></p><h5><span class="en">From reveille to lights out</span><span class="hi">जागरण से बत्ती बंद तक</span></h5><div class="rows"><div><span class="t">04:00</span><span class="e"><span class="en">Reveille — wake up and freshen up</span><span class="hi">जागरण — उठना और तैयार होना</span></span></div><div><span class="t">05:30</span><span class="e"><span class="en">Morning exercise and yoga</span><span class="hi">प्रातःकालीन व्यायाम और योग</span></span></div><div><span class="t">08:00</span><span class="e"><span class="en">Five teaching periods</span><span class="hi">पाँच शिक्षण कालांश</span></span></div><div><span class="t">18:15</span><span class="e"><span class="en">Games, outdoor or indoor</span><span class="hi">खेल (मैदानी या कक्ष में)</span></span></div><div><span class="t">22:30</span><span class="e"><span class="en">Lights out</span><span class="hi">बत्ती बंद</span></span></div></div></div><div class="ft"><p><span class="en">Admission is by entrance test. Fees are shared on enquiry.</span><span class="hi">दाख़िला प्रवेश परीक्षा से होता है। फ़ीस पूछताछ पर बताई जाती है।</span></p><div class="nums"><span>94682-32364</span><span>72063-22364</span></div></div>
+    </div>
+      </div>
+      <button type="button" class="olike" aria-pressed="false"><span class="tick" aria-hidden="true">✓</span><span class="lt">Like this</span></button>
+    </article>
+  </div>
+</section>
+
+<section class="finish" id="summary">
+  <h2>Your picks</h2>
+  <p class="picked none" id="picked">You have not picked anything yet.</p>
+  <ul class="pnames" id="pnames"></ul>
+  <p class="say">Send these letters back on WhatsApp, and we will build the one you choose.</p>
+  <p class="local">These ticks are saved on this phone only. Nothing is sent anywhere automatically — so please do send the letters. If you clear your browser, or open this link on a different phone, you will start again.</p>
+  <button type="button" class="clearbtn" id="clear">Clear my picks</button>
+</section>
+
+<p class="foot">Dayal School of Competition · Satnali, Mahendergarh, Haryana. Designs only — no photographs, results or student information appear on this page.</p>
+
+</div>
+
+<div class="bar">
+  <div>
+    <p class="bl">Liked</p>
+    <p class="bv" id="barv">Nothing yet</p>
+  </div>
+  <a class="bgo" href="#summary">Finish</a>
+</div>
+
+<script>
+(function(){
+  var KEY='dsc-look-picks';
+  var opts=[].slice.call(document.querySelectorAll('.opt'));
+  var order=opts.map(function(o){return o.getAttribute('data-id');});
+  var names={};
+  opts.forEach(function(o){names[o.getAttribute('data-id')]=o.querySelector('.ometa h3').textContent;});
+  var liked=[];
+  try{var raw=localStorage.getItem(KEY); if(raw){var p=JSON.parse(raw); if(Array.isArray(p)) liked=p;}}catch(e){liked=[];}
+  liked=liked.filter(function(id){return order.indexOf(id)>-1;});
+  function save(){try{localStorage.setItem(KEY,JSON.stringify(liked));}catch(e){}}
+  function sorted(){return order.filter(function(id){return liked.indexOf(id)>-1;});}
+  var barv=document.getElementById('barv'),
+      picked=document.getElementById('picked'),
+      pnames=document.getElementById('pnames');
+  function render(){
+    var s=sorted();
+    opts.forEach(function(o){
+      var on=s.indexOf(o.getAttribute('data-id'))>-1;
+      o.setAttribute('data-liked',on?'1':'0');
+      var b=o.querySelector('.olike');
+      b.setAttribute('aria-pressed',String(on));
+      b.querySelector('.lt').textContent=on?'Liked':'Like this';
+    });
+    while(pnames.firstChild){pnames.removeChild(pnames.firstChild);}
+    if(s.length){
+      barv.textContent=s.join(' · ');
+      picked.textContent=s.join(' · ');
+      picked.className='picked';
+      s.forEach(function(id){
+        var li=document.createElement('li');
+        var b=document.createElement('b');
+        b.textContent=id;
+        li.appendChild(b);
+        li.appendChild(document.createTextNode(' — '+names[id]));
+        pnames.appendChild(li);
+      });
+    }else{
+      barv.textContent='Nothing yet';
+      picked.textContent='You have not picked anything yet.';
+      picked.className='picked none';
+    }
+  }
+  opts.forEach(function(o){
+    o.querySelector('.olike').addEventListener('click',function(){
+      var id=o.getAttribute('data-id'), i=liked.indexOf(id);
+      if(i>-1){liked.splice(i,1);}else{liked.push(id);}
+      save(); render();
+    });
+  });
+  document.getElementById('clear').addEventListener('click',function(){liked=[]; save(); render();});
+  render();
+})();
+</script>
+
+</body>
+</html>
